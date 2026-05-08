@@ -3,59 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>n0ngritv2</title>
+<title>nongritv2</title>
+<link rel="icon" type="imge/png"href="https://scontent.fbkk35-1.fna.fbcdn.net/v/t39.30808-6/689846155_122110073546948745_8869791798465254561_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=jBPg__volW0Q7kNvwHh9dEK&_nc_oc=AdoHAP_vLmIOK9iDhQ32Ep05geiVU-paAe1OOU2cW89FCOZGukPIuzuMlr79chqCts1iqf96kEDZJWz2w7twqrlz&_nc_zt=23&_nc_ht=scontent.fbkk35-1.fna&_nc_gid=OS8eCoXedmEsWEefc93m6g&_nc_ss=7b2a8&oh=00_Af71-7ftUSovBGX4RO6mGq8eNcP8vARP_MWJ-mT2Dsftcg&oe=6A03647B">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Russo One', sans-serif;
 }
 
 body {
-    background: radial-gradient(circle at 20% 30%, #2a0050, transparent 40%),
-                radial-gradient(circle at 80% 70%, #4b0082, transparent 40%),
-                radial-gradient(circle at 50% 50%, #000000, #0a0014 80%);
-    color: white;
+    background: radial-gradient(circle at 50% 50%, #000000, #111111 80%);
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
-    position: relative;
-}
-body::before {
-    content: "";
-    position: absolute;
-    width: 200%;
-    height: 200%;
-    background-image: radial-gradient(white 1px, transparent 1px);
-    background-size: 3px 3px;
-    opacity: 0.15;
-    animation: starsMove 60s linear infinite;
-}
-body::after {
-    content: "";
-    position: absolute;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(160,32,240,0.25), transparent 60%);
-    filter: blur(80px);
-    animation: smokeMove 20s ease-in-out infinite alternate;
 }
 
-@keyframes starsMove {
-    from { transform: translate(0,0); }
-    to { transform: translate(-200px, -300px); }
-}
-
-@keyframes smokeMove {
-    from { transform: translate(-50px, -50px) scale(1); }
-    to { transform: translate(50px, 50px) scale(1.2); }
-}
 .container {
     text-align: center;
     width: 90%;
@@ -63,20 +34,19 @@ body::after {
     padding: 25px;
     border-radius: 20px;
     backdrop-filter: blur(12px);
-    background: rgba(20, 0, 40, 0.6);
+    background: rgba(0, 0, 0, 0.6);
     box-shadow: 
-        0 0 20px #a020f055,
-        0 0 40px #6a00ff33;
-    position: relative;
-    z-index: 1;
+        0 0 20px rgba(255,255,255,0.1),
+        0 0 40px rgba(255,255,255,0.05);
 }
+
 .profile img {
     width: 110px;
     height: 110px;
     border-radius: 50%;
-    border: 3px solid #a020f0;
+    border: 3px solid #ffffff;
     margin-bottom: 10px;
-    box-shadow: 0 0 15px #a020f0aa;
+    box-shadow: 0 0 15px rgba(255,255,255,0.3);
 }
 
 .profile h1 {
@@ -86,8 +56,9 @@ body::after {
 
 .profile p {
     font-size: 14px;
-    color: #bbb;
+    color: #888;
     margin-bottom: 20px;
+    font-family: 'Kanit', sans-serif;
 }
 
 .link {
@@ -97,18 +68,23 @@ body::after {
     padding: 12px;
     margin: 10px 0;
     border-radius: 12px;
-    background: rgba(30, 0, 60, 0.6);
-    border: 1px solid #f3f6f4;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid #ffffff;
     transition: 0.3s;
-    box-shadow: 0 0 10px #6a00ff22;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
 }
 
 .link:hover {
-    background: linear-gradient(45deg, #a020f0, #6a00ff);
+    background: #ffffff;
+    color: #000000;
     transform: scale(1.05);
     box-shadow: 
-        0 0 15px #a020f0,
-        0 0 25px #6a00ff;
+        0 0 15px #ffffff,
+        0 0 30px #ffffff;
+}
+
+.link:active {
+    transform: scale(0.95);
 }
 </style>
 
@@ -118,14 +94,17 @@ body::after {
 <div class="container">
     
     <div class="profile">
-        <img src="https://scontent.fbkk35-1.fna.fbcdn.net/v/t39.30808-1/653984252_122096624252948745_5148676357009871871_n.jpg?stp=c23.12.1034.1034a_dst-jpg_s200x200_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_ohc=_Z7v8sWdWI0Q7kNvwHUouho&_nc_oc=Adq3eZr12S4SubdVrhfdKIlznalQzeZ7XTlLTY4ChSF7Tz2Fe4bRAMAX-A8INvrMsCSJdzgRhNR4R4KnlNmBzUmo&_nc_zt=24&_nc_ht=scontent.fbkk35-1.fna&_nc_gid=8-FXE9HrdiVDBWTYp-hc2w&_nc_ss=7b2a8&oh=00_Af4JNWUytojsULWnzCsR_wA14yOGD5t9euLBzdP68-kgEA&oe=6A023C82">
+        <img src="https://scontent.fbkk35-1.fna.fbcdn.net/v/t39.30808-1/653984252_122096624252948745_5148676357009871871_n.jpg?stp=c23.12.1034.1034a_dst-jpg_s200x200_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_ohc=cMHSoklT6HYQ7kNvwFJxkXL&_nc_oc=AdreYJsU3Ckur6ftZVwWPlZLNGRaW6LW-3BdqY7RpUMngSWcBeBDZ9LfqF0NrkI6XHcWWp1aiETlb_cq0a0XIgBy&_nc_zt=24&_nc_ht=scontent.fbkk35-1.fna&_nc_gid=p9nHlE26YPtkA9OSgJ1J9g&_nc_ss=7b2a8&oh=00_Af4mpHg9mhGaLAyrz_KVL5LJSLD7_D_BsnNW6Hl3UUFqFA&oe=69FF2902">
         <h1>NongRit888v2</h1>
+        <p>สุดโหด</p>
     </div>
 
-    <a href="https://www.facebook.com/profile.php?id=61578462358345&locale=th_TH" class="link">Facebook</a>
-    <a href="https://www.instagram.com/umaako5/" class="link">Instagram</a>
-    <a href="https://www.tiktok.com/@ruchipairot.nopph?_r=1&_t=ZS-94N3bFL8Ylx/" class="link">tiktok</a>
+    <a href="https://www.facebook.com/profile.php?id=61578462358345&locale=th_TH" class="link" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/umaako5/" class="link" target="_blank">Instagram</a>
+    <a href="https://www.tiktok.com/" class="link" target="_blank">TikTok</a>
     <a href="https://github.com/ritnoppharit-hash" class="link">Github</a>
+
+
 </div>
 
 </body>
