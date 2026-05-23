@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>nongritv2</title>
+
+<link rel="icon" type="https://scontent.fbkk28-1.fna.fbcdn.net/v/t39.30808-1/689846155_122110073546948745_8869791798465254561_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_ohc=ker2R4hrIRoQ7kNvwFW5vsn&_nc_oc=AdrTdk660PXpUdktj8YkgIj4DKhQ_JxUT6YHOQ43Za40KLRNE-0Qzs9huO4VnrMPJcQ&_nc_zt=24&_nc_ht=scontent.fbkk28-1.fna&_nc_gid=OhniQXNfTJ7_PpVS204jUg&_nc_ss=7b2a8&oh=00_Af4_g-OybWjUsX1F5w3RRpwPVA1nwtPGuomcP-iv5ZTa8w&oe=6A04AD60">
+
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Russo One',sans-serif;
+}
+
+body{
+background:#000;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+color:white;
+position:relative;
+}
+.stars{
+position:absolute;
+width:100%;
+height:100%;
+background:
+radial-gradient(2px 2px at 20px 30px,#fff,transparent),
+radial-gradient(2px 2px at 90px 70px,#fff,transparent),
+radial-gradient(1px 1px at 150px 50px,#fff,transparent),
+radial-gradient(2px 2px at 250px 100px,#fff,transparent);
+background-size:300px 300px;
+animation:moveStars 60s linear infinite;
+opacity:.7;
+}
+
+@keyframes moveStars{
+from{transform:translateY(0);}
+to{transform:translateY(-300px);}
+}
+
+.container{
+position:relative;
+z-index:2;
+text-align:center;
+width:90%;
+max-width:350px;
+padding:25px;
+border-radius:20px;
+backdrop-filter:blur(12px);
+background:rgba(0,0,0,.6);
+box-shadow:0 0 20px rgba(255,255,255,.1);
+}
+
+.profile img{
+width:110px;
+height:110px;
+border-radius:50%;
+border:3px solid #fff;
+margin-bottom:10px;
+box-shadow:0 0 15px rgba(255,255,255,.4);
+object-fit:cover;
+}
+
+.profile h1{
+font-size:22px;
+margin-bottom:5px;
+}
+
+.profile p {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+
+@keyframes typing{
+from{width:0}
+to{width:100%}
+}
+
+@keyframes blink{
+50%{border-color:transparent}
+}
+
+.link{
+display:block;
+text-decoration:none;
+color:white;
+padding:12px;
+margin:10px 0;
+border-radius:12px;
+background:rgba(255,255,255,.05);
+border:1px solid #fff;
+transition:.3s;
+}
+
+.link:hover{
+background:#fff;
+color:#000;
+transform:scale(1.05);
+box-shadow:0 0 20px #fff;
+}
+
+.link:active{
+transform:scale(.95);
+}
+</style>
+</head>
+<body>
+
+<div class="stars"></div>
+
+<div class="container">
+
+<div class="profile">
+<img src="https://scontent.fbkk35-1.fna.fbcdn.net/v/t39.30808-1/689846155_122110073546948745_8869791798465254561_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeEjLZkElPQGr1LBziSauojJl8TlVb61lNKXxOVVvrWU0kU4N_w0UWDdzZD5Ql3uxR3C-m-DHI7-JXDF-rCpWsiC&_nc_ohc=xfUCt0cPX3IQ7kNvwGAnLmT&_nc_oc=AdpEIsg0-SVcV30ZQBzeGrc78K_yn8-6sil-WELJHvhp8XlKxO8eQh2RoSZe_WaUrSWUH9XqqKcFyfwM7GaTceru&_nc_zt=24&_nc_ht=scontent.fbkk35-1.fna&_nc_gid=CSosvqK5ubKqk647U4IGbw&_nc_ss=7b2a8&oh=00_Af6axhb2cunc4cGRjoe_ONpCL9NEJgCyRqeobieXa3paeg&oe=6A17CB20">
+<h1>NongRit888v2</h1>
+<p>สุดโหด</p>
+</div>
+
+<a href="https://www.facebook.com/profile.php?id=61578462358345" class="link" target="_blank">Facebook</a>
+<a href="https://www.instagram.com/umaako5/" class="link" target="_blank">Instagram</a>
+<a href="https://www.tiktok.com/" class="link" target="_blank">TikTok</a>
+<a href="https://github.com/ritnoppharit-hash" class="link" target="_blank">Github</a>
+
+</div>
+
+</body>
+</html>
