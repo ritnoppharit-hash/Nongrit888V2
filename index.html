@@ -3,14 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>nongritv2</title>
 
-<link rel="icon" type="https://scontent.fbkk28-1.fna.fbcdn.net/v/t39.30808-1/689846155_122110073546948745_8869791798465254561_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_ohc=ker2R4hrIRoQ7kNvwFW5vsn&_nc_oc=AdrTdk660PXpUdktj8YkgIj4DKhQ_JxUT6YHOQ43Za40KLRNE-0Qzs9huO4VnrMPJcQ&_nc_zt=24&_nc_ht=scontent.fbkk28-1.fna&_nc_gid=OhniQXNfTJ7_PpVS204jUg&_nc_ss=7b2a8&oh=00_Af4_g-OybWjUsX1F5w3RRpwPVA1nwtPGuomcP-iv5ZTa8w&oe=6A04AD60">
+<link rel="icon"
+href="https://scontent.fbkk28-1.fna.fbcdn.net/v/t39.30808-1/689846155_122110073546948745_8869791798465254561_n.jpg">
 
 <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -27,7 +30,10 @@ align-items:center;
 overflow:hidden;
 color:white;
 position:relative;
+transition:.4s;
 }
+
+/* ดาว */
 .stars{
 position:absolute;
 width:100%;
@@ -47,6 +53,7 @@ from{transform:translateY(0);}
 to{transform:translateY(-300px);}
 }
 
+/* กล่องหลัก */
 .container{
 position:relative;
 z-index:2;
@@ -75,20 +82,11 @@ font-size:22px;
 margin-bottom:5px;
 }
 
-.profile p {
-    font-size: 14px;
-    color: #888;
-    margin-bottom: 20px;
-    font-family: 'Kanit', sans-serif;
-}
-
-@keyframes typing{
-from{width:0}
-to{width:100%}
-}
-
-@keyframes blink{
-50%{border-color:transparent}
+.profile p{
+font-size:14px;
+color:#888;
+margin-bottom:20px;
+font-family:'Kanit',sans-serif;
 }
 
 .link{
@@ -113,26 +111,144 @@ box-shadow:0 0 20px #fff;
 .link:active{
 transform:scale(.95);
 }
+
+/* Toggle Theme */
+.theme-switch{
+position:absolute;
+top:20px;
+right:20px;
+z-index:99;
+}
+
+.theme-switch input{
+display:none;
+}
+
+.switch{
+width:70px;
+height:35px;
+background:#222;
+border-radius:50px;
+position:relative;
+cursor:pointer;
+transition:.4s;
+border:2px solid #fff;
+}
+
+.switch::before{
+content:"☀";
+position:absolute;
+width:28px;
+height:28px;
+background:#fff;
+border-radius:50%;
+top:1px;
+left:2px;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:14px;
+transition:.4s;
+color:#000;
+}
+
+.theme-switch input:checked + .switch{
+background:#fff;
+}
+
+.theme-switch input:checked + .switch::before{
+transform:translateX(34px);
+content:"🌙";
+}
+
+body.light{
+background:#fff7f1;
+color:#5c4033;
+}
+
+body.light .container{
+background:rgba(255,245,238,.85);
+box-shadow:0 0 20px rgba(255,170,120,.18);
+color:#5c4033;
+border:1px solid rgba(255,190,150,.35);
+}
+
+body.light .profile p{
+color:#b07d62;
+}
+
+body.light .link{
+color:#7a4e35;
+border:1px solid rgba(255,180,140,.35);
+background:rgba(255,230,215,.55);
+}
+
+body.light .link:hover{
+background:#ffd6bf;
+color:#5c4033;
+box-shadow:0 0 15px rgba(255,170,120,.25);
+}
+
+body.light .stars{
+opacity:.12;
+}
 </style>
 </head>
+
 <body>
 
+<!-- Toggle -->
+<label class="theme-switch">
+<input type="checkbox" id="toggleTheme">
+<div class="switch"></div>
+</label>
+
+<!-- Stars -->
 <div class="stars"></div>
 
+<!-- Main -->
 <div class="container">
 
 <div class="profile">
 <img src="https://scontent.fbkk35-1.fna.fbcdn.net/v/t39.30808-1/689846155_122110073546948745_8869791798465254561_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeEjLZkElPQGr1LBziSauojJl8TlVb61lNKXxOVVvrWU0kU4N_w0UWDdzZD5Ql3uxR3C-m-DHI7-JXDF-rCpWsiC&_nc_ohc=xfUCt0cPX3IQ7kNvwGAnLmT&_nc_oc=AdpEIsg0-SVcV30ZQBzeGrc78K_yn8-6sil-WELJHvhp8XlKxO8eQh2RoSZe_WaUrSWUH9XqqKcFyfwM7GaTceru&_nc_zt=24&_nc_ht=scontent.fbkk35-1.fna&_nc_gid=CSosvqK5ubKqk647U4IGbw&_nc_ss=7b2a8&oh=00_Af6axhb2cunc4cGRjoe_ONpCL9NEJgCyRqeobieXa3paeg&oe=6A17CB20">
+
 <h1>NongRit888v2</h1>
 <p>สุดโหด</p>
 </div>
 
-<a href="https://www.facebook.com/profile.php?id=61578462358345" class="link" target="_blank">Facebook</a>
-<a href="https://www.instagram.com/umaako5/" class="link" target="_blank">Instagram</a>
-<a href="https://www.tiktok.com/" class="link" target="_blank">TikTok</a>
-<a href="https://github.com/ritnoppharit-hash" class="link" target="_blank">Github</a>
+<a href="https://www.facebook.com/profile.php?id=61578462358345"
+class="link"
+target="_blank">
+Facebook
+</a>
+
+<a href="https://www.instagram.com/umaako5/"
+class="link"
+target="_blank">
+Instagram
+</a>
+
+<a href="https://www.tiktok.com/@ruchipairot.nopph?_r=1&_t=ZS-96enGMBGEKL"
+class="link"
+target="_blank">
+TikTok
+</a>
+
+<a href="https://github.com/ritnoppharit-hash"
+class="link"
+target="_blank">
+Github
+</a>
 
 </div>
+
+<script>
+const toggle = document.getElementById("toggleTheme");
+
+toggle.addEventListener("change", () => {
+document.body.classList.toggle("light");
+});
+</script>
 
 </body>
 </html>
