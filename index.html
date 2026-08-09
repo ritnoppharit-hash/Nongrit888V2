@@ -32,7 +32,6 @@ position:relative;
 transition:.4s;
 }
 
-/* ดาว */
 .stars{
 position:absolute;
 width:100%;
@@ -52,7 +51,6 @@ from{transform:translateY(0);}
 to{transform:translateY(-300px);}
 }
 
-/* กล่องหลัก */
 .container{
 position:relative;
 z-index:2;
@@ -78,7 +76,10 @@ object-fit:cover;
 
 .profile h1{
 font-size:22px;
-margin-bottom:5px;
+margin-bottom: 8px;
+background: linear-gradient(90deg, #ffffff, #ffb366, #000000);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent
 }
 
 .profile p{
@@ -111,7 +112,6 @@ box-shadow:0 0 20px #fff;
 transform:scale(.95);
 }
 
-/* Toggle Theme */
 .theme-switch{
 position:absolute;
 top:20px;
@@ -135,7 +135,7 @@ border:2px solid #fff;
 }
 
 .switch::before{
-content:"☼";
+content:"☀";
 position:absolute;
 width:28px;
 height:28px;
@@ -157,7 +157,7 @@ background:#fff;
 
 .theme-switch input:checked + .switch::before{
 transform:translateX(34px);
-content:"☾";
+content:"🌙";
 }
 
 body.light{
@@ -195,17 +195,12 @@ opacity:.12;
 </head>
 
 <body>
-
-<!-- Toggle -->
 <label class="theme-switch">
 <input type="checkbox" id="toggleTheme">
 <div class="switch"></div>
 </label>
 
-<!-- Stars -->
 <div class="stars"></div>
-
-<!-- Main -->
 <div class="container">
 
 <div class="profile">
@@ -238,6 +233,11 @@ class="link"
 target="_blank">
 Github
 </a>
+
+<a href="https://line.me/ti/p/JjWAB_fHHp"
+class="link"
+target="_blank">
+Line</a>
 
 </div>
 
